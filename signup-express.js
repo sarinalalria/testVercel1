@@ -17,16 +17,7 @@ app.use(express.static('../HTML'))
 
 app.use(express.static('../testVercel1'))
 
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => {
-        console.log(`CONNECTED TO MONGO!`);
-        app.listen(port);
-        console.log("listening on port 3000")
-    })
-    .catch((err) => {
-        console.log(`OH NO! MONGO CONNECTION ERROR!`);
-        console.log(err);
-    })
+
 
 
 app.use(express.static('HTML'));
