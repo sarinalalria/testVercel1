@@ -6,7 +6,7 @@ router.get("/", async (req, res, next) => {
   res.set({
     'Access-control-Allow-Origin': '*'
 });
-return res.redirect('index.html');
+return res.redirect('../index.html');
 });
 
 module.exports = router;
