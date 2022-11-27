@@ -81,7 +81,7 @@ app.post("/login", function (req, res) {
 });
 
 
-app.use("/home", home);
+app.use("/", home);
 
 
 
