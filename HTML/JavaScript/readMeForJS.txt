@@ -1,1 +1,0 @@
-This is to have the javascript folder show up on github, since there are no javascript files yet. 
