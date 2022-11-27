@@ -3,7 +3,7 @@
     "builds": [
         {
             "src": "signup-express.js", 
-            "use": "@now/node"
+            "use": "@vercel/node"
         }
     ],
     "routes": [
