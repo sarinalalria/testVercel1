@@ -11,6 +11,8 @@ const url = process.env.url;
 
 const port = process.env.PORT || 3000
 
+const index = require("./routes/index");
+
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(express.static('../HTML'))
@@ -93,7 +95,7 @@ app.post("/login", function (req, res) {
 
 
 
-app.get("/", function (req, res) {
+app.get("/index", function (req, res) {
     res.set({
         'Access-control-Allow-Origin': '*'
     });
