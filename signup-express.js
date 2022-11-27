@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(express.static('../HTML'))
 
-app.use(express.static('../CS372Project'))
+app.use(express.static('../testVercel1'))
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {

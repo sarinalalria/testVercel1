@@ -2,7 +2,7 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/", async (req, res, next) => {
+router.get("/index.js", async (req, res, next) => {
   res.set({
     'Access-control-Allow-Origin': '*'
 });
