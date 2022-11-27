@@ -1,0 +1,33 @@
+{
+  "name": "testvercel1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "signup-express.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node signup-express.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarinalalria/testVercel1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarinalalria/testVercel1/issues"
+  },
+  "homepage": "https://github.com/sarinalalria/testVercel1#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.3"
+  }
+}
