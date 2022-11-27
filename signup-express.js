@@ -108,3 +108,5 @@ app.get("/login", function (req, res) {
     return res.redirect('login.html');
 
 });
+
+module.exports = app; 
