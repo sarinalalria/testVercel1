@@ -9,7 +9,7 @@ dotenv.config({ path: './.env' });
 const url = process.env.url;
 
 
-const port = process.env.PORT || 3000
+
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -109,4 +109,6 @@ app.get("/login", function (req, res) {
 
 });
 
-module.exports = { app }
+app.listen(3000);
+
+module.exports = app 
