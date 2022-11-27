@@ -3,6 +3,8 @@ const app = express()
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 
+const home = require("./routes/home");
+
 const dotenv = require('dotenv');
 dotenv.config({ path: './.env' });
 
@@ -79,14 +81,8 @@ app.post("/login", function (req, res) {
 });
 
 
+app.use("/home", home);
 
-app.get("/", function (req, res) {
-    res.set({
-        'Access-control-Allow-Origin': '*'
-    });
-    return res.redirect('index.html');
-
-});
 
 
 app.get("/signup", function (req, res) {
