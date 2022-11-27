@@ -9,27 +9,16 @@ dotenv.config({ path: './.env' });
 const url = process.env.url;
 
 
-const port = process.env.PORT || 3000
-
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(express.static('../HTML'))
 
 app.use(express.static('../testVercel1'))
 
-mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => {
-        console.log(`CONNECTED TO MONGO!`);
-    })
-    .catch((err) => {
-        console.log(`OH NO! MONGO CONNECTION ERROR!`);
-        console.log(err);
-    })
-
-
 app.use(express.static('HTML'));
+
 const User = require('./models/user');
-const e = require('express');
+
 
 app.post("/signup", function (req, res) {
     console.log(req.body.firstname)
@@ -116,7 +105,7 @@ app.get("/login", function (req, res) {
 
 });
 
-app.listen(port);
+app.listen(3000);
 console.log("listening on port 3000")
 
 module.exports = app
