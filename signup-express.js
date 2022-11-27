@@ -11,7 +11,7 @@ const url = process.env.url;
 
 const port = process.env.PORT || 3000
 
-const index = require("./routes/index");
+const home = require("./routes/index");
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -95,7 +95,7 @@ app.post("/login", function (req, res) {
 
 
 
-app.use("/index", index);
+app.use("/home", home);
 
 
 app.get("/signup", function (req, res) {
